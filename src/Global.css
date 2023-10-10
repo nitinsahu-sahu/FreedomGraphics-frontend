@@ -1,0 +1,395 @@
+/* single Order page */
+.card-stepper {
+    z-index: 0
+}
+
+#progressbar-2 {
+    color: #455A64;
+}
+
+#progressbar-2 li {
+    list-style-type: none;
+    font-size: 13px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+}
+
+#progressbar-2 #step1:before {
+    content: '\f058';
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    width: 37px;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+#progressbar-2 #step2:before {
+    content: '\f058';
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    width: 37px;
+}
+
+#progressbar-2 #step3:before {
+    content: '\f058';
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    width: 37px;
+    margin-right: 0;
+    text-align: center;
+}
+
+#progressbar-2 #step4:before {
+    content: '\f111';
+    font-family: "Font Awesome 5 Free";
+    color: #fff;
+    width: 37px;
+    margin-right: 0;
+    text-align: center;
+}
+
+#progressbar-2 li:before {
+    line-height: 37px;
+    display: block;
+    font-size: 12px;
+    background: #c5cae9;
+    border-radius: 50%;
+}
+
+#progressbar-2 li:after {
+    content: '';
+    width: 100%;
+    height: 10px;
+    background: #c5cae9;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 15px;
+    z-index: -1;
+}
+
+#progressbar-2 li:nth-child(1):after {
+    left: 1%;
+    width: 100%
+}
+
+#progressbar-2 li:nth-child(2):after {
+    left: 1%;
+    width: 100%;
+}
+
+#progressbar-2 li:nth-child(3):after {
+    left: 1%;
+    width: 100%;
+    background: #c5cae9 !important;
+}
+
+#progressbar-2 li:nth-child(4) {
+    left: 0;
+    width: 37px;
+}
+
+#progressbar-2 li:nth-child(4):after {
+    left: 0;
+    width: 0;
+}
+
+#progressbar-2 li.active:before,
+#progressbar-2 li.active:after {
+    background: #6520ff;
+}
+
+
+/* Right Sidebar */
+.contactUsFlag {
+    position: fixed;
+    right: 0px;
+    bottom: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 10px;
+    background: #000;
+    box-shadow: 0px 3px 9px rgba(0, 0, 0, 0.15);
+    border-radius: 16px 0px 0px 16px;
+    cursor: pointer;
+    color: white;
+    z-index: 1000;
+    font-family: 'Euclid Circular A';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 100%;
+    width: 90px;
+    transition: all 0.3s;
+}
+
+.contactUsFlag .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 0.3s;
+}
+
+/* error page */
+
+.error-template {
+    padding: 40px 15px;
+    text-align: center;
+}
+
+.error-actions {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.error-actions .btn {
+    margin-right: 10px;
+}
+
+/* home page */
+.home h3 {
+    text-align: center;
+    text-transform: capitalize;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.home img {
+    max-width: 16rem;
+    height: 5rem;
+}
+
+
+.service {
+    background-color: #bfa9ac;
+    border-radius: 20px;
+}
+
+.hero-right {
+    background-color: #834e56;
+}
+
+.common {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.super {
+    padding-top: 70px;
+}
+
+.icon {
+    background-color: white;
+    padding: 6px;
+    border-radius: 20%;
+}
+
+.wlcm-text {
+    color: #834e56;
+}
+
+.hero-section-img-right img {
+    max-width: 85%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: -1.7%;
+}
+
+.hero-section-left {
+    padding: 10% 10%;
+}
+
+
+.hero-section-left .welcome {
+    margin: 2rem 0;
+    color: #834e56;
+}
+
+
+/* Button */
+Button {
+    background-color: #834e56;
+    color: white;
+    border-color: #834e56;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 5px 9px;
+    border-radius: 9px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Navbar css */
+.cart-trolley--link {
+    position: relative;
+}
+
+.cart-trolley {
+    position: relative;
+    font-size: 2.2rem;
+}
+
+.cart-total--items {
+    width: 1.6rem;
+    height: 1.6rem;
+    position: absolute;
+    background-color: #000;
+    color: #FFF;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    top: -5%;
+    left: 50%;
+    background-color: #000;
+}
+
+
+.category-header {
+    width: 100%;
+    height: 45px;
+    border-top: 1px solid #cecece;
+    background: #fff;
+    border-bottom: 1px solid #cecece;
+    box-shadow: 0 2px 2px -2px #333;
+}
+
+.category-header ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.category-header>ul {
+    display: flex;
+    margin: 0 50px;
+    position: relative;
+}
+
+.category-header>ul>li>span {
+    display: block;
+    line-height: 40px;
+    cursor: pointer;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+.category-header>ul>li>span:hover {
+    color: #bfa9ac;
+}
+
+.category-header>ul>li>ul {
+    position: absolute;
+    background-color: #f8f9fa;
+    left: 0;
+    right: 0;
+    display: none;
+    z-index: 1;
+}
+
+.category-header>ul>li:hover ul {
+    display: block;
+}
+
+.category-header>ul>li>ul>li {
+    margin: 0 20px;
+    float: left;
+    min-width: 140px;
+}
+
+.category-header>ul>li>ul>li>a {
+    font-weight: bold;
+    display: block;
+    font-size: 16px;
+}
+
+.category-header>ul>li>ul>li a {
+    padding: 3px 0;
+    display: block;
+    font-size: 14px;
+    text-decoration: none;
+    color: #d6336c;
+}
+
+/* ------------------------Single produtc page css */
+@media (min-width: 768px) {
+    .product {
+        width: 49%;
+    }
+}
+
+
+
+.product {
+    background-color: #eee
+}
+
+.brand {
+    font-size: 13px
+}
+
+.act-price {
+    color: red;
+    font-weight: 700
+}
+
+.dis-price {
+    text-decoration: line-through
+}
+
+.about {
+    font-size: 14px
+}
+
+.color {
+    margin-bottom: 10px
+}
+
+label.radio {
+    cursor: pointer
+}
+
+label.radio input {
+    position: absolute;
+    top: 0;
+    left: 0;
+    visibility: hidden;
+    pointer-events: none
+}
+
+label.radio span {
+    padding: 2px 9px;
+    border: 2px solid #ff0000;
+    display: inline-block;
+    color: #ff0000;
+    border-radius: 3px;
+    text-transform: uppercase
+}
+
+label.radio input:checked+span {
+    border-color: #ff0000;
+    background-color: #ff0000;
+    color: #fff
+}
+
+.btn-danger {
+    background-color: #ff0000 !important;
+    border-color: #ff0000 !important
+}
+
+.btn-danger:hover {
+    background-color: #da0606 !important;
+    border-color: #da0606 !important
+}
+
+.btn-danger:focus {
+    box-shadow: none
+}
+
+.cart i {
+    margin-right: 10px
+}
